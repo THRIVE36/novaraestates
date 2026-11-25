@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Novara Estates | Book a Viewing or Valuation</title>
+<meta name="description" content="Contact Novara Estates to book a property viewing, request a valuation or ask about buying, selling, renting or investing. Reply within hours.">
+<meta name="theme-color" content="#14281c">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Novara Estates">
+<meta property="og:title" content="Contact Novara Estates | Book a Viewing or Valuation">
+<meta property="og:description" content="Contact Novara Estates to book a property viewing, request a valuation or ask about buying, selling, renting or investing. Reply within hours.">
+<meta property="og:image" content="images/hero.webp">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contact" class="solid-header" id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+<section class="page-hero" style="background-image:url('images/banner-terrace.webp')"><div class="container">
+<p class="crumbs fade-up"><a href="index.html">Home</a> / Contact</p><h1 class="fade-up d1">Contact Us</h1><p class="fade-up d2">Questions, viewings or valuations? We usually reply within a few hours.</p></div></section>
+<section class="section"><div class="container contact-grid">
+  <div class="form-card reveal">
+    <h2 style="font-size:1.8rem">Send us a message</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <div class="field"><label for="cName">Full name *</label><input id="cName" name="name" type="text" autocomplete="name" required aria-describedby="eName"><span class="error" id="eName"></span></div>
+        <div class="field"><label for="cEmail">Email *</label><input id="cEmail" name="email" type="email" autocomplete="email" required aria-describedby="eEmail"><span class="error" id="eEmail"></span></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label for="cPhone">Phone / WhatsApp</label><input id="cPhone" name="phone" type="tel" autocomplete="tel" placeholder="+234 800 000 0000" aria-describedby="ePhone"><span class="error" id="ePhone"></span></div>
+        <div class="field"><label for="cTopic">I’m interested in *</label><select id="cTopic" name="topic" required aria-describedby="eTopic"><option value="">Select…</option><option>Buying a property</option><option>Selling a property</option><option>Renting / lettings</option><option>Investment advice</option><option>Property management</option><option>Something else</option></select><span class="error" id="eTopic"></span></div>
+      </div>
+      <div class="field"><label for="cProp">Property of interest (optional)</label><select id="cProp" name="property"><option value="">None / general enquiry</option></select></div>
+      <div class="field"><label for="cMsg">Message * <small style="text-transform:none;letter-spacing:0">(min. 20 characters)</small></label><textarea id="cMsg" name="message" required aria-describedby="eMsg"></textarea><span class="error" id="eMsg"></span></div>
+      <div class="hp" aria-hidden="true"><label>Leave blank <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+      <div class="field"><label class="check" style="text-transform:none;letter-spacing:0;font-size:.9rem"><input type="checkbox" id="cConsent" required> I agree to be contacted about my enquiry. *</label><span class="error" id="eConsent"></span></div>
+      <button class="btn btn-gold btn-block" type="submit">Send message</button>
+    </form>
+    <div class="success" id="success" hidden role="status"><div class="tick" aria-hidden="true">✓</div><h3>Thank you, <span id="sName"></span>!</h3><p>Your enquiry is ready. Send it straight to our team on WhatsApp for the fastest reply.</p><a class="btn btn-wa" id="sWa" href="#" target="_blank" rel="noopener">Send on WhatsApp</a><p style="margin-top:1rem"><button class="btn btn-outline" id="again" type="button">Send another message</button></p></div>
+  </div>
+  <aside class="info-card reveal"><h2 style="font-size:1.8rem">Visit or call</h2>
+    <ul class="info-list">
+      <li><div class="icon-badge" aria-hidden="true">📍</div><div><strong>Office</strong><span id="iAddr"></span></div></li>
+      <li><div class="icon-badge" aria-hidden="true">☎</div><div><strong>Phone</strong><a id="iPhone" href="#"></a></div></li>
+      <li><div class="icon-badge" aria-hidden="true">✉</div><div><strong>Email</strong><a id="iMail" href="#"></a></div></li>
+      <li><div class="icon-badge" aria-hidden="true">🕒</div><div><strong>Opening hours</strong><span id="iHours"></span></div></li>
+    </ul>
+    <a class="btn btn-wa btn-block" id="iWa" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    <div class="map-box"><div><strong style="font-family:var(--serif);font-size:1.2rem">Novara Estates HQ</strong><br><span id="iAddr2" style="opacity:.8"></span></div></div>
+  </aside>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

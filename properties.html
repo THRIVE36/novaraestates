@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Properties for Sale | Villas, Apartments &amp; Houses | Novara Estates</title>
+<meta name="description" content="Browse luxury villas, penthouses, apartments and houses for sale. Filter by location, price and property type with Novara Estates.">
+<meta name="theme-color" content="#14281c">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Novara Estates">
+<meta property="og:title" content="Properties for Sale | Villas, Apartments &amp; Houses | Novara Estates">
+<meta property="og:description" content="Browse luxury villas, penthouses, apartments and houses for sale. Filter by location, price and property type with Novara Estates.">
+<meta property="og:image" content="images/hero.webp">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="properties" class="solid-header" id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+<section class="page-hero" style="background-image:url('images/banner-villa.webp')"><div class="container">
+<p class="crumbs fade-up"><a href="index.html">Home</a> / Properties</p><h1 class="fade-up d1">Our Properties</h1><p class="fade-up d2">Search and filter premium homes by location, type, price and size.</p></div></section>
+<section class="section" style="padding-top:0"><div class="container">
+  <form class="filter-bar" id="filters" aria-label="Filter properties" onsubmit="return false">
+    <div class="field wide" style="margin:0"><label for="fQ">Search</label><input id="fQ" type="search" placeholder="Name, area or city, e.g. Ikoyi"></div>
+    <div class="field" style="margin:0"><label for="fLoc">Location</label><select id="fLoc"><option value="">All locations</option></select></div>
+    <div class="field" style="margin:0"><label for="fType">Type</label><select id="fType"><option value="">All types</option><option>Villa</option><option>House</option><option>Apartment</option><option>Penthouse</option><option>Townhouse</option></select></div>
+    <div class="field" style="margin:0"><label for="fBeds">Bedrooms</label><select id="fBeds"><option value="">Any</option><option value="1">1+</option><option value="2">2+</option><option value="3">3+</option><option value="4">4+</option><option value="5">5+</option></select></div>
+    <div class="field" style="margin:0"><label for="fMin">Min price</label><select id="fMin"><option value="">No min</option><option value="200000">$200,000</option><option value="400000">$400,000</option><option value="600000">$600,000</option><option value="800000">$800,000</option><option value="1000000">$1,000,000</option><option value="1500000">$1,500,000</option><option value="2000000">$2,000,000</option><option value="3000000">$3,000,000</option></select></div>
+    <div class="field" style="margin:0"><label for="fMax">Max price</label><select id="fMax"><option value="">No max</option><option value="200000">$200,000</option><option value="400000">$400,000</option><option value="600000">$600,000</option><option value="800000">$800,000</option><option value="1000000">$1,000,000</option><option value="1500000">$1,500,000</option><option value="2000000">$2,000,000</option><option value="3000000">$3,000,000</option></select></div>
+    <div class="field" style="margin:0"><label for="fSort">Sort by</label><select id="fSort"><option value="featured">Featured first</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="size">Largest size</option></select></div>
+    <button class="btn btn-outline" type="button" id="reset">Reset filters</button>
+  </form>
+  <div class="toolbar"><p aria-live="polite" id="count"></p><label class="check"><input type="checkbox" id="fSaved"> Show saved properties only</label></div>
+  <div class="grid grid-3" id="results"></div>
+  <div class="empty" id="empty" hidden><h3>No properties match your search</h3><p>Try widening your price range or clearing some filters.</p><button class="btn btn-green" type="button" id="reset2">Clear all filters</button></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/properties.js"></script>
+</body>
+</html>
